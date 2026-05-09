@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: earthbound;
+  src: url('../public/assets/fonts/earthbound.otf');
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: earthbound;
+  background-color: #14144b;
+  color: #eaeaff;
+}
+
+body {
+  background-color: #14144b;
+}
+
+.gris {
+  background-color: #ababb4;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+main {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #c9c6ff;
+}
+
+.ost-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.ost-card {
+  background: linear-gradient(180deg, #0d1030, #090b1a);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.ost-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(80, 70, 200, 0.4);
+}
+
+.ost-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  padding: 10px;
+}
+
+.ost-info {
+  padding: 15px;
+}
+
+.ost-info h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.ost-info span {
+  font-size: 0.85rem;
+  color: #9aa0ff;
+}
+
+footer {
+  background-color: #aab;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b6cff, #7b3cff);
+  border: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  .ost-grid {
+    grid-template-columns: 1fr;
+  }
+}
