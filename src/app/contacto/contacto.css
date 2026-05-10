@@ -1,0 +1,22 @@
+main {
+  min-height: 80vh;
+}
+h1 {
+  color: white;
+}
+.contacto-card {
+  background-color: #2b2b2b;
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+.form-control {
+  background-color: #1e1e1e;
+  border: none;
+  color: white;
+}
+.form-control:focus {
+  background-color: #1e1e1e;
+  color: white;
+  box-shadow: none;
+}
