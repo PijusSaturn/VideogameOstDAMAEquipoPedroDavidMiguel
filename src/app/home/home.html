@@ -4,52 +4,15 @@
 
   <section class="ost-grid">
 
-    <article class="ost-card">
-      <img src="/assets/img/Majora's Mask.jpg" alt="Majora's Mask">
-      <div class="ost-info">
-        <h3>The Legend of Zelda: Majora's Mask</h3>
-        <span>Koji Kondo</span>
-      </div>
-    </article>
+    <article class="ost-card" *ngFor="let ost of osts">
 
-    <article class="ost-card">
-      <img src="/assets/img/FinalFantasyIX.jpg" alt="Final Fantasy IX">
-      <div class="ost-info">
-        <h3>Final Fantasy IX</h3>
-        <span>Nobuo Uematsu</span>
-      </div>
-    </article>
+      <img [src]="ost.imagen" [alt]="ost.titulo">
 
-    <article class="ost-card">
-      <img src="/assets/img/Outer Wilds.jpg" alt="Outer Wilds">
       <div class="ost-info">
-        <h3>Outer Wilds</h3>
-        <span>Andrew Prahlow</span>
+        <h3>{{ ost.titulo }}</h3>
+        <span>{{ ost.autor }}</span>
       </div>
-    </article>
 
-    <article class="ost-card">
-      <img src="/assets/img/EarthBound.jpg" alt="Earthbound">
-      <div class="ost-info">
-        <h3>Earthbound</h3>
-        <span>Keiichi Suzuki</span>
-      </div>
-    </article>
-
-    <article class="ost-card">
-      <img src="/assets/img/coverart.jpg" alt="Sonic CD">
-      <div class="ost-info">
-        <h3>Sonic CD</h3>
-        <span>Naofumi Hataya</span>
-      </div>
-    </article>
-
-    <article class="ost-card">
-      <img src="/assets/img/1 Minecraft - Volume Alpha.jpg" alt="Minecraft">
-      <div class="ost-info">
-        <h3>Minecraft</h3>
-        <span>C418</span>
-      </div>
     </article>
 
   </section>

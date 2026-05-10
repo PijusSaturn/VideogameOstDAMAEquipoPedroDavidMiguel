@@ -1,0 +1,17 @@
+[
+  {
+    "titulo": "Majora's Mask",
+    "autor": "Koji Kondo",
+    "imagen": "assets/img/Majora's Mask.jpg"
+  },
+  {
+    "titulo": "Final Fantasy IX",
+    "autor": "Nobuo Uematsu",
+    "imagen": "assets/img/FinalFantasyIX.jpg"
+  },
+  {
+    "titulo": "Outer Wilds",
+    "autor": "Andrew Prahlow",
+    "imagen": "assets/img/Outer Wilds.jpg"
+  }
+]
