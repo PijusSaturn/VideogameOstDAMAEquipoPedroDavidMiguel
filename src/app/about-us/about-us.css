@@ -1,0 +1,22 @@
+.ost-card {
+  background-color: #2b2b2b;
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.ost-card:hover {
+  transform: scale(1.03);
+}
+
+.ost-info {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+main {
+  min-height: 80vh;
+}

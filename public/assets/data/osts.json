@@ -13,5 +13,20 @@
     "titulo": "Outer Wilds",
     "autor": "Andrew Prahlow",
     "imagen": "assets/img/Outer Wilds.jpg"
+  },
+  {
+    "titulo": "Earthbound",
+    "autor": "Keiichi Suzuki",
+    "imagen": "assets/img/EarthBound.jpg"
+  },
+  {
+    "titulo": "Sonic CD",
+    "autor": "Naofumi Hataya",
+    "imagen": "assets/img/coverart.jpg"
+  },
+  {
+    "titulo": "Minecraft",
+    "autor": "C418",
+    "imagen": "assets/img/1 Minecraft - Volume Alpha.jpg"
   }
 ]
