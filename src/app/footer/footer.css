@@ -1,40 +1,5 @@
-/* FOOTER PRINCIPAL */
 footer {
+  background-color: #aab;
+  border-radius: 8px;
   margin-top: 40px;
-  padding: 20px;
-  text-align: center;
-
-  background: linear-gradient(180deg, #0d1030, #090b1a);
-  border-top: 1px solid rgba(123, 60, 255, 0.2);
-
-  color: #9aa0ff;
-}
-
-/* TEXTO PRINCIPAL */
-footer p {
-  margin: 5px 0;
-  font-size: 0.9rem;
-}
-
-/* LINKS DEL FOOTER */
-footer a {
-  color: #c9c6ff;
-  margin: 0 8px;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-footer a:hover {
-  color: #7b3cff;
-}
-
-/* ICONOS (si usas bootstrap icons o similares) */
-footer i {
-  margin: 0 5px;
-  transition: 0.2s;
-}
-
-footer i:hover {
-  color: #7b3cff;
-  transform: scale(1.1);
 }

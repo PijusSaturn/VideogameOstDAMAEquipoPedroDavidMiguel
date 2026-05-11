@@ -1,70 +1,61 @@
-/* CONTENEDOR PRINCIPAL */
-.login-container {
-  height: 100vh;
+.auth-container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #14144b;
+  background-color: #14144b;
+  padding: 20px;
 }
 
-/* CAJA LOGIN */
-.login-box {
+.auth-card {
+  background: #0d1030;
+  padding: 40px;
+  border-radius: 15px;
   width: 100%;
-  max-width: 400px;
-  padding: 30px;
-  border-radius: 12px;
-
-  background: linear-gradient(180deg, #0d1030, #090b1a);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
-
-  text-align: center;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* TÍTULO */
-.login-box h2 {
-  margin-bottom: 20px;
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
   color: #c9c6ff;
 }
 
-/* INPUTS */
-.login-box input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  border: 1px solid rgba(154, 160, 255, 0.3);
+input {
+  padding: 14px;
+  border: none;
   border-radius: 8px;
-
-  background: rgba(255, 255, 255, 0.03);
-  color: #eaeaff;
-
-  outline: none;
-  transition: 0.2s;
+  background: #1f235c;
+  color: white;
 }
 
-/* FOCUS INPUT */
-.login-box input:focus {
-  border-color: #7b3cff;
-  box-shadow: 0 0 8px rgba(123, 60, 255, 0.4);
+input::placeholder {
+  color: #aaa;
 }
 
-/* BOTÓN (mejor usar global .btn-primary) */
-.login-box button {
-  width: 100%;
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b6cff, #7b3cff);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-/* TEXTO AUXILIAR */
-.login-box p {
-  margin-top: 15px;
-  font-size: 0.85rem;
-  color: #9aa0ff;
+.switch-auth {
+  margin-top: 25px;
+  text-align: center;
 }
 
-.login-box a {
-  color: #7b3cff;
+.switch-auth a {
+  color: #8ea2ff;
   text-decoration: none;
-}
-
-.login-box a:hover {
-  text-decoration: underline;
 }

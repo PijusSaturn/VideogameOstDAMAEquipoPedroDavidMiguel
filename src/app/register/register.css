@@ -1,59 +1,61 @@
-.register-container {
-  height: 100vh;
+.auth-container {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #14144b;
+  background-color: #14144b;
+  padding: 20px;
 }
 
-.register-box {
+.auth-card {
+  background: #0d1030;
+  padding: 40px;
+  border-radius: 15px;
   width: 100%;
-  max-width: 420px;
-  padding: 30px;
-  border-radius: 12px;
-
-  background: linear-gradient(180deg, #0d1030, #090b1a);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
-
-  text-align: center;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.register-box h2 {
-  margin-bottom: 20px;
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
   color: #c9c6ff;
 }
 
-.register-box input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  border: 1px solid rgba(154, 160, 255, 0.3);
+input {
+  padding: 14px;
+  border: none;
   border-radius: 8px;
-
-  background: rgba(255, 255, 255, 0.03);
-  color: #eaeaff;
-
-  outline: none;
-  transition: 0.2s;
+  background: #1f235c;
+  color: white;
 }
 
-.register-box input:focus {
-  border-color: #7b3cff;
-  box-shadow: 0 0 8px rgba(123, 60, 255, 0.4);
+input::placeholder {
+  color: #aaa;
 }
 
-.register-box button {
-  width: 100%;
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b6cff, #7b3cff);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.register-box p {
-  margin-top: 15px;
-  font-size: 0.85rem;
-  color: #9aa0ff;
+.switch-auth {
+  margin-top: 25px;
+  text-align: center;
 }
 
-.register-box a {
-  color: #7b3cff;
+.switch-auth a {
+  color: #8ea2ff;
   text-decoration: none;
 }

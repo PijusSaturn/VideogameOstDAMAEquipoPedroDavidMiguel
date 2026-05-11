@@ -1,35 +1,24 @@
-@font-face {
-  font-family: earthbound;
-  src: url('assets/fonts/earthbound.otf');
-}
-
-body {
-  margin: 0;
-  font-family: earthbound, Arial, sans-serif;
-  background-color: #14144b;
-  color: #eaeaff;
-}
-
-/* RESET GLOBAL */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* LINKS GLOBAL */
-a {
-  color: inherit;
+@font-face {
+  font-family: earthbound;
+  src: url('../public/assets/fonts/earthbound.otf');
 }
 
-/* SCROLLBAR (bonus estilo gamer) */
-::-webkit-scrollbar {
-  width: 8px;
+body {
+  background-color: #14144b;
+  color: #eaeaff;
+  font-family: earthbound;
 }
 
-::-webkit-scrollbar-track {
-  background: #0d1030;
-}
+@media (max-width: 768px) {
 
-::-webkit-scrollbar-thumb {
-  background: #7b3cff;
-  border-radius: 10px;
+  .ost-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
