@@ -1,0 +1,70 @@
+/* CONTENEDOR PRINCIPAL */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #14144b;
+}
+
+/* CAJA LOGIN */
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+
+  background: linear-gradient(180deg, #0d1030, #090b1a);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+
+  text-align: center;
+}
+
+/* TÍTULO */
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #c9c6ff;
+}
+
+/* INPUTS */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  border: 1px solid rgba(154, 160, 255, 0.3);
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.03);
+  color: #eaeaff;
+
+  outline: none;
+  transition: 0.2s;
+}
+
+/* FOCUS INPUT */
+.login-box input:focus {
+  border-color: #7b3cff;
+  box-shadow: 0 0 8px rgba(123, 60, 255, 0.4);
+}
+
+/* BOTÓN (mejor usar global .btn-primary) */
+.login-box button {
+  width: 100%;
+}
+
+/* TEXTO AUXILIAR */
+.login-box p {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  color: #9aa0ff;
+}
+
+.login-box a {
+  color: #7b3cff;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}

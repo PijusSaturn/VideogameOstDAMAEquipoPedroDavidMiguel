@@ -1,0 +1,37 @@
+.soundtracks-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.soundtracks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* reutiliza card global */
+.soundtrack-card {
+  composes: card;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.soundtrack-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.soundtrack-info {
+  padding: 12px;
+}
+
+.soundtrack-title {
+  color: #eaeaff;
+}
+
+.soundtrack-game {
+  color: #9aa0ff;
+}

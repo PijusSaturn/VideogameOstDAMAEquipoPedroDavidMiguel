@@ -1,0 +1,83 @@
+/* CONTENEDOR PRINCIPAL */
+.soundtrack-detail {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* HEADER (PORTADA + INFO) */
+.soundtrack-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* PORTADA */
+.soundtrack-cover {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* INFO */
+.soundtrack-info h1 {
+  color: #c9c6ff;
+  margin-bottom: 5px;
+}
+
+.soundtrack-info p {
+  color: #9aa0ff;
+}
+
+/* BOTÓN (usa global .btn-primary si puedes) */
+.play-button {
+  margin-top: 10px;
+}
+
+/* LISTA DE TRACKS */
+.track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CADA TRACK */
+.track-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 15px;
+  border-radius: 10px;
+
+  /* reutiliza estilo tipo card */
+  background: linear-gradient(180deg, #0d1030, #090b1a);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+
+  transition: 0.2s;
+}
+
+.track-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 12px 35px rgba(123, 60, 255, 0.3);
+}
+
+/* DURACIÓN */
+.track-duration {
+  color: #9aa0ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .soundtrack-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .soundtrack-cover {
+    width: 140px;
+    height: 140px;
+  }
+}

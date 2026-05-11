@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: earthbound;
+  src: url('assets/fonts/earthbound.otf');
+}
+
+body {
+  margin: 0;
+  font-family: earthbound, Arial, sans-serif;
+  background-color: #14144b;
+  color: #eaeaff;
+}
+
+/* RESET GLOBAL */
+* {
+  box-sizing: border-box;
+}
+
+/* LINKS GLOBAL */
+a {
+  color: inherit;
+}
+
+/* SCROLLBAR (bonus estilo gamer) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1030;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7b3cff;
+  border-radius: 10px;
+}
