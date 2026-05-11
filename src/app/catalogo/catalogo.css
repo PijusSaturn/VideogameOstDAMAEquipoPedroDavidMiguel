@@ -5,19 +5,16 @@
   padding: 20px;
 }
 
-/* TÍTULO */
 .catalogo-container h2 {
   margin-bottom: 20px;
 }
 
-/* GRID (usa el patrón global) */
 .catalogo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
 }
 
-/* TARJETA (reutiliza estilo global) */
 .catalogo-card {
   background: linear-gradient(180deg, #0d1030, #090b1a);
   border-radius: 10px;
@@ -32,7 +29,6 @@
   box-shadow: 0 12px 35px rgba(123, 60, 255, 0.3);
 }
 
-/* IMAGEN */
 .catalogo-card img {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -40,7 +36,6 @@
   padding: 10px;
 }
 
-/* INFO */
 .catalogo-info {
   padding: 12px;
 }
