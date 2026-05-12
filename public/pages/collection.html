@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones OST - Videojuegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg rounded gris" aria-label="site navigation">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+      <a class="navbar-brand col-lg-3 me-0" href="/">Videogame OST</a>
+      <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/catalogo">Colecciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+      </ul>
+      <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+        <a href="/login" class="btn btn-primary">Log In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+    <main class="collection-main">
+        <!-- VISTA DE CONSOLAS -->
+        <div id="consoles-view">
+            <h2 class="section-title">🎮 Selecciona una Consola</h2>
+            <div class="console-grid">
+                <div class="console-card" onclick="showGames('snes')">
+                    <img src="/collections_images/SNES-Mod1-Console-Set.png" alt="Super Nintendo">
+                    <div class="console-name">Super Nintendo</div>
+                </div>
+
+                <div class="console-card" onclick="showGames('n64')">
+                    <img src="/collections_images/N64-Console-Set.png" alt="Nintendo 64">
+                    <div class="console-name">Nintendo 64</div>
+                </div>
+
+                <div class="console-card" onclick="showGames('gamecube')">
+                    <img src="/collections_images/GameCube-Console-Set.png" alt="GameCube">
+                    <div class="console-name">GameCube</div>
+                </div>
+
+                <div class="console-card" onclick="showGames('switch')">
+                    <img src="/collections_images/Switch real.png" alt="Nintendo Switch">
+                    <div class="console-name">Nintendo Switch</div>
+                </div>
+
+                <div class="console-card" onclick="showGames('ps1')">
+                    <img src="/collections_images/ps1.png" alt="PlayStation 1">
+                    <div class="console-name">PlayStation 1</div>
+                </div>
+
+                <div class="console-card" onclick="showGames('ps4')">
+                    <img src="/collections_images/ps4.png" alt="PlayStation 4">
+                    <div class="console-name">PlayStation 4</div>
+                </div>
+
+                <div class="console-card" onclick="showGames('megacd')">
+                    <img src="/collections_images/MegaCD.png" alt="Sega Mega CD">
+                    <div class="console-name">Sega mega CD</div>
+                </div>
+
+                <div class="console-card" onclick="showGames('pc')">
+                    <img src="/collections_images/pc.png" alt="PC">
+                    <div class="console-name">PC</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISTA DE JUEGOS -->
+        <div id="games-view" style="display: none;">
+            <div class="back-button">
+                <button class="btn btn-secondary" onclick="backToConsoles()">← Volver a Consolas</button>
+            </div>
+            <h2 class="section-title" id="console-title"></h2>
+            <section class="ost-grid" id="games-grid"></section>
+        </div>
+    </main>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item-Home">
+                <a href="/index.html" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item-About">
+                <a href="/pages/about.html" class="nav-link px-2 text-body-secondary">About</a>
+            </li>
+            <li class="nav-item-Colecciones">
+                <a href="/pages/collection.html" class="nav-link px-2 text-body-secondary">Colecciones</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy; 2026 OST de Videojuegos</p>
+    </footer>
+</div>
+
+<script>
+    const games = {
+        snes: {
+            name: 'Super Nintendo (SNES)',
+            games: [
+                { title: 'EarthBound', composer: 'Keiichi Suzuki', image: '/img/EarthBound.jpg', link: '/pages/Earthbound.html' },
+                { title: 'Super Mario RPG', composer: 'Yoko Shimomura', image: '/img/MarioRPG.jpg', link: '/pages/MarioRPG.html' }
+            ]
+        },
+        n64: {
+            name: 'Nintendo 64',
+            games: [
+                { title: 'The Legend of Zelda: Majora\'s Mask', composer: 'Koji Kondo', image: '/img/Majora\'s Mask.jpg', link: '/pages/The Legend of Zelda Majora\'s Mask.html' }
+            ]
+        },
+        gamecube: {
+            name: 'GameCube',
+            games: [
+                { title: 'The Legend of Zelda: The Wind Waker', composer: 'Koji Kondo', image: '/img/WindWakerjpg.jpg', link: '/pages/WindWaker.html' }
+            ]
+        },
+        switch: {
+            name: 'Nintendo Switch',
+            games: [
+                { title: 'Xenoblade Chronicles 2', composer: 'Yasunori Mitsuda', image: '/img/Xenoblade.jpg', link: '/pages/Xenoblade.html' }
+            ]
+        },
+        ps1: {
+            name: 'PlayStation 1',
+            games: [
+                { title: 'Final Fantasy IX', composer: 'Nobuo Uematsu', image: '/img/FinalFantasyIX.jpg', link: '/pages/Final Fantasy IX.html' }
+            ]
+        },
+        ps4: {
+            name: 'PlayStation 4',
+            games: [
+                { title: 'Persona 5', composer: 'Sega Sound Team', image: '/img/Persona5.jpg', link: '/pages/Persona5.html' }
+            ]
+        },
+        megacd: {
+            name: 'Sega Mega CD',
+            games: [
+                { title: 'Sonic CD', composer: 'Naofumi Hataya', image: '/img/coverart.jpg', link: '/pages/SonicCd.html' }
+            ]
+        },
+        pc: {
+            name: 'PC',
+            games: [
+                { title: 'Outer Wilds', composer: 'Andrew Prahlow', image: '/img/Outer Wilds.jpg', link: '/pages/OuterWilds.html' },
+                { title: 'Deltarune', composer: 'Toby Fox', image: '/img/deltarune.jpg', link: '/pages/Deltarune.html' },
+                { title: 'Hylics 2', composer: 'Mason Lindroth y Chuck Salomone', image: '/img/Hylics.jpg', link: '/pages/Hylics.html' },
+                { title: 'Minecraft', composer: 'C418', image: '/img/1 Minecraft - Volume Alpha.jpg', link: '/pages/Minecraft.html' }
+            ]
+        }
+    };
+
+    function showGames(consoleId) {
+        const console = games[consoleId];
+        document.getElementById('consoles-view').style.display = 'none';
+        document.getElementById('games-view').style.display = 'block';
+        document.getElementById('console-title').textContent = console.name;
+        
+        const gamesGrid = document.getElementById('games-grid');
+        gamesGrid.innerHTML = '';
+        
+        console.games.forEach(game => {
+            const article = document.createElement('article');
+            article.className = 'ost-card';
+            article.innerHTML = `
+                <a href="${game.link}">
+                    <img src="${game.image}" alt="${game.title}">
+                </a>
+                <div class="ost-info">
+                    <h3>${game.title}</h3>
+                    <span>${game.composer}</span>
+                </div>
+            `;
+            gamesGrid.appendChild(article);
+        });
+        
+        window.scrollTo(0, 0);
+    }
+
+    function backToConsoles() {
+        document.getElementById('consoles-view').style.display = 'block';
+        document.getElementById('games-view').style.display = 'none';
+        window.scrollTo(0, 0);
+    }
+</script>
+</body>
+</html>

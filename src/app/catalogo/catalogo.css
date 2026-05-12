@@ -1,49 +1,109 @@
-/* CONTENEDOR PRINCIPAL */
-.catalogo-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+main.container {
+  padding: 1.5rem 0;
 }
 
-.catalogo-container h2 {
-  margin-bottom: 20px;
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
-.catalogo-grid {
+.filtros input {
+  flex: 1 1 240px;
+  min-width: 240px;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: #eef0ff;
+}
+
+.filtros button {
+  padding: 0.9rem 1.3rem;
+  border-radius: 14px;
+  border: none;
+  background: #5f6cff;
+  color: white;
+}
+
+.grid-soundtracks {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.catalogo-card {
-  background: linear-gradient(180deg, #0d1030, #090b1a);
-  border-radius: 10px;
+.soundtrack-card {
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-  transition: 0.25s;
-  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
-.catalogo-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(123, 60, 255, 0.3);
+.soundtrack-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px rgba(95, 108, 255, 0.22);
 }
 
-.catalogo-card img {
+.soundtrack-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-  padding: 10px;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
-.catalogo-info {
-  padding: 12px;
+.soundtrack-info {
+  padding: 1rem 1.1rem 1.3rem;
 }
 
-.catalogo-info h3 {
-  color: #eaeaff;
+.soundtrack-title {
+  margin: 0;
+  color: #eef0ff;
 }
 
-.catalogo-info span {
+.soundtrack-composer {
+  margin: 0.35rem 0 0.85rem;
+  color: #aab2ff;
+}
+
+.soundtrack-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
   color: #9aa0ff;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: rgba(95, 108, 255, 0.12);
+  color: #c8d1ff;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.loader,
+.mensaje-vacio {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 1.5rem;
+  color: #d0d7ff;
+}
+
+@media (max-width: 760px) {
+  .filtros {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }

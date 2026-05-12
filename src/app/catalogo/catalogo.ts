@@ -32,14 +32,17 @@ export class Catalogo implements OnInit {
 
   filtrar(event: any) {
     const texto = event.target.value.toLowerCase();
-    this.filtrados = this.soundtracks.filter(s =>
-      s.title.toLowerCase().includes(texto) ||
-      s.game.toLowerCase().includes(texto)
-    );
+    this.filtrados = this.soundtracks.filter(s => {
+      const title = s.title?.toLowerCase() ?? '';
+      const composer = s.composer?.toLowerCase() ?? '';
+      const game = s.game?.toLowerCase() ?? '';
+      const platform = s.platform?.toLowerCase() ?? '';
+      return title.includes(texto) || composer.includes(texto) || game.includes(texto) || platform.includes(texto);
+    });
   }
+
   limpiarFiltros() {
     this.filtrados = [...this.soundtracks];
-
   }
 
 }
