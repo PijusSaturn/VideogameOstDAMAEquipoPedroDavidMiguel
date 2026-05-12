@@ -3,18 +3,16 @@
   <h2>🎧 OST Destacadas</h2>
 
   <section class="ost-grid">
+    @for (ost of osts; track ost.titulo) {
+      <article class="ost-card">
+        <img [src]="ost.imagen" [alt]="ost.titulo">0
+        <div class="ost-info">
+          <h3>{{ ost.titulo }}</h3>
+          <span>{{ ost.autor }}</span>
+        </div>
 
-    <article class="ost-card" *ngFor="let ost of osts">
-
-      <img [src]="ost.imagen" [alt]="ost.titulo">
-
-      <div class="ost-info">
-        <h3>{{ ost.titulo }}</h3>
-        <span>{{ ost.autor }}</span>
-      </div>
-
-    </article>
-
+      </article>
+    }
   </section>
 
 </main>
