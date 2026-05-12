@@ -4,41 +4,33 @@
     {
       "id": 1,
       "title": "Super Mario Bros - Main Theme",
-      "game": "Super Mario Bros",
-      "year": 1985,
-      "platform": "NES",
       "composer": "Koji Kondo",
-      "duration": "2:58",
-      "audio": "/assets/audio/super_mario_bros.mp3",
-      "cover": "/assets/images/super_mario_cover.png",
-      "tags": ["platformer", "classic", "8-bit"]
+      "cover": "/assets/images/super_mario_cover.png"
     },
     {
       "id": 2,
-      "title": "Zelda - Overworld Theme",
-      "game": "The Legend of Zelda",
-      "year": 1986,
-      "platform": "NES",
+      "title": "Slide",
       "composer": "Koji Kondo",
-      "duration": "2:15",
-      "audio": "audio/zelda_overworld.mp3",
-      "cover": "/assets/images/zelda_cover.png",
-      "tags": ["adventure", "classic", "8-bit"]
+      "cover": "/assets/images/zelda_cover.png"
+
     },
     {
+      "id": 3,
       "title": "Chrono Trigger",
-      "artist": "Yasunori Mitsuda",
-      "image": "assets/img/chrono-trigger.jpg"
+      "composer": "Yasunori Mitsuda",
+      "cover": "assets/images/chrono-trigger.jpg"
     },
     {
+      "id": 4,
       "title": "NieR Automata",
-      "artist": "Keiichi Okabe",
-      "image": "assets/img/nier.jpg"
+      "composer": "Keiichi Okabe",
+      "cover": "assets/images/nier.jpg"
     },
     {
+      "id": 5,
       "title": "Undertale",
-      "artist": "Toby Fox",
-      "image": "assets/img/undertale.jpg"
+      "composer": "Toby Fox",
+      "cover": "assets/images/undertale.jpg"
     }
   ]
 }
