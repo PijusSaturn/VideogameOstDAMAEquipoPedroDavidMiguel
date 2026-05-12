@@ -24,6 +24,18 @@
       "audio": "audio/zelda_overworld.mp3",
       "cover": "images/zelda_cover.jpg",
       "tags": ["adventure", "classic", "8-bit"]
+    },
+    {
+      "id": 3,
+      "title": "Tu madre en patitinete",
+      "game": "fokin angular",
+      "year": 2067,
+      "platform": "AAA",
+      "composer": "yo",
+      "duration": "67:67",
+      "audio": "audio/zelda_overworld.mp3",
+      "cover": "images/zelda_cover.jpg",
+      "tags": ["adventure", "classic", "8-bit"]
     }
   ]
 }

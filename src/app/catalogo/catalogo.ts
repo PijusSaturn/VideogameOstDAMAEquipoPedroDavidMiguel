@@ -41,4 +41,5 @@ export class Catalogo implements OnInit {
     this.filtrados = [...this.soundtracks];
 
   }
+
 }
