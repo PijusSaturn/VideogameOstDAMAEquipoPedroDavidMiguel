@@ -10,6 +10,8 @@ export class OstService {
   constructor(private http: HttpClient) {}
 
   getOsts() {
-    return this.http.get<any[]>('assets/data/osts.json');
+    return this.http.get<any[]>('public/assets/data/osts.json');
   }
+}
+export class Ost {
 }

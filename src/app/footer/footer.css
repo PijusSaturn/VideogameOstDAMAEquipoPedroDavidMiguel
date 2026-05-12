@@ -1,5 +1,9 @@
 footer {
-  background-color: #aab;
-  border-radius: 8px;
+  background: linear-gradient(180deg, #4a3398, #070d50 );
+  border-top: 2px solid #5865f2;
+  border-radius: 8px 8px 0 0;
   margin-top: 40px;
+  padding: 20px;
+  color: #f1f1ff;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.4);
 }

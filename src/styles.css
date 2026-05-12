@@ -1,6 +1,6 @@
 @font-face {
   font-family: earthbound;
-  src: url('assets/fonts/earthbound.otf');
+  src: url('../public/assets/fonts/earthbound.otf');
 }
 
 body {
