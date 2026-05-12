@@ -5,6 +5,7 @@
   <section class="ost-grid">
     @for (ost of osts; track ost.titulo) {
       <article class="ost-card">
+
         <img [src]="ost.imagen" [alt]="ost.titulo">0
         <div class="ost-info">
           <h3>{{ ost.titulo }}</h3>

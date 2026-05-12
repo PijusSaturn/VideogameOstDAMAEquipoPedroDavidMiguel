@@ -1,26 +1,48 @@
 .not-found-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  background-color: #14144b;
+  padding: 20px;
+}
 
-  background: #14144b;
+.not-found-card {
+  background: #0d1030;
+  padding: 50px;
+  border-radius: 20px;
   text-align: center;
+  max-width: 600px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
-.not-found-container h1 {
-  font-size: 4rem;
-  color: #c9c6ff;
+.not-found-card h1 {
+  font-size: 7rem;
+  color: #8ea2ff;
+  margin-bottom: 10px;
 }
 
-.not-found-container p {
-  color: #9aa0ff;
-  margin-top: 10px;
+.not-found-card h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
-.not-found-container a {
-  margin-top: 20px;
-  color: #7b3cff;
+.not-found-card p {
+  color: #cccccc;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 10px;
   text-decoration: none;
+  background: linear-gradient(135deg, #3b6cff, #7b3cff);
+  color: white;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  transform: translateY(-3px);
 }

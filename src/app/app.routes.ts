@@ -6,6 +6,7 @@ import { Register } from './register/register';
 import { AboutUs } from './about-us/about-us';
 import { Catalogo } from './catalogo/catalogo';
 import { Contacto } from './contacto/contacto';
+import { NotFound } from './not-found/not-found';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -13,5 +14,9 @@ export const routes: Routes = [
   { path: 'register', component: Register },
   { path: 'about', component: AboutUs },
   { path: 'catalogo', component: Catalogo },
-  { path: 'contacto', component: Contacto }
+  { path: 'contacto', component: Contacto },
+  {
+    path: '**',
+    component: NotFound
+  }
 ];
