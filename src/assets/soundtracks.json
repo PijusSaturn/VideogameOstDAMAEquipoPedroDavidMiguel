@@ -1,0 +1,30 @@
+{
+
+  "soundtracks": [
+    {
+      "id": 1,
+      "title": "Super Mario Bros - Main Theme",
+      "game": "Super Mario Bros",
+      "year": 1985,
+      "platform": "NES",
+      "composer": "Koji Kondo",
+      "duration": "2:58",
+      "audio": "audio/super_mario_bros.mp3",
+      "cover": "images/super_mario_cover.jpg",
+      "tags": ["platformer", "classic", "8-bit"]
+    },
+    {
+      "id": 2,
+      "title": "Zelda - Overworld Theme",
+      "game": "The Legend of Zelda",
+      "year": 1986,
+      "platform": "NES",
+      "composer": "Koji Kondo",
+      "duration": "2:15",
+      "audio": "audio/zelda_overworld.mp3",
+      "cover": "images/zelda_cover.jpg",
+      "tags": ["adventure", "classic", "8-bit"]
+    }
+  ]
+}
+

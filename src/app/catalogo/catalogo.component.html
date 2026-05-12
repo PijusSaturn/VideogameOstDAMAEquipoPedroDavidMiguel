@@ -1,74 +1,39 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Soundtracks</title>
-  <!--<link rel="stylesheet" href="../style.css">-->
-</head>
-<body>
-<header>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="styles.css" class="active">Catálogo</a>
-    <a href="favoritos.html">Favoritos</a>
-  </nav>
-</header>
-
 <main class="container">
   <h1>Catálogo de Soundtracks</h1>
 
-  <!-- Filtros -->
   <div class="filtros">
-    <input type="text" id="buscador" placeholder="Buscar soundtrack, juego o compositor...">
-    <select id="filtroPlataforma">
-      <option value="">Todas las plataformas</option>
-      <option value="NES">NES</option>
-      <option value="SNES">SNES</option>
-      <option value="PS1">PS1</option>
-      <option value="PC">PC</option>
-    </select>
-    <select id="filtroAno">
-      <option value="">Todos los años</option>
-      <option value="1980s">1980s</option>
-      <option value="1990s">1990s</option>
-      <option value="2000s">2000s</option>
-    </select>
-    <button id="limpiarFiltros">Limpiar</button>
+    <input
+      type="text"
+      (input)="filtrar($event)"
+      placeholder="Buscar soundtrack, juego o compositor...">
+
+    <button (click)="limpiarFiltros()">Limpiar</button>
   </div>
 
-  <!-- Loader -->
-  <div id="loader" class="loader hidden">Cargando...</div>
-
-  <!-- Grid de soundtracks -->
-  <div id="gridSoundtracks" class="grid-soundtracks"></div>
-
-  <!-- Mensaje vacío -->
-  <div id="mensajeVacio" class="mensaje-vacio hidden">
-    <p>No se encontraron soundtracks con esos filtros</p>
+  <div *ngIf="loading" class="loader">
+    <p>Cargando catálogo...</p>
   </div>
-</main>
 
-<!-- Player modal -->
-<div id="playerModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="player-container">
-      <img id="modalCover" src="" alt="Cover">
-      <div class="player-info">
-        <h2 id="modalTitle"></h2>
-        <p id="modalGame"></p>
-        <p id="modalComposer"></p>
-        <audio id="audioPlayer" controls></audio>
-        <div class="player-meta">
-          <span id="modalDuration"></span>
-          <div class="tags" id="modalTags"></div>
+  <div class="grid-soundtracks" *ngIf="!loading">
+    <div *ngFor="let item of filtrados" class="soundtrack-card">
+      <img [src]="item.cover" [alt]="item.title"
+           onerror="this.src='https://via.placeholder.com/300x200?text=Sin+Imagen'">
+
+      <div class="soundtrack-info">
+        <h3 class="soundtrack-title">{{ item.title }}</h3>
+        <p class="soundtrack-game">{{ item.game }}</p>
+        <div class="soundtrack-meta">
+          <span>{{ item.platform }} • {{ item.year }}</span>
+          <span>{{ item.duration }}</span>
+        </div>
+        <div class="tags">
+          <span *ngFor="let tag of item.tags" class="tag">{{ tag }}</span>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<script src="js/catalogo.js"></script>
-</body>
-</html>
+  <div *ngIf="filtrados.length === 0 && !loading" class="mensaje-vacio">
+    <p>No se encontraron soundtracks con esos filtros.</p>
+  </div>
+</main>
