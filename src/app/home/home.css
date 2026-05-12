@@ -1,89 +1,52 @@
-/* CONTENEDOR PRINCIPAL */
-.home-container {
+main {
+  padding: 30px;
   max-width: 1200px;
   margin: auto;
-  padding: 30px 20px;
 }
 
-/* HERO / CABECERA */
-.home-hero {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.home-hero h1 {
-  font-size: 2rem;
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
   color: #c9c6ff;
-  margin-bottom: 10px;
 }
 
-.home-hero p {
-  color: #9aa0ff;
-  font-size: 1rem;
-}
-
-/* BOTÓN HERO (usa estilo global si puedes) */
-.home-hero button {
-  margin-top: 15px;
-}
-
-/* SECCIÓN DESTACADOS */
-.home-section {
-  margin-top: 40px;
-}
-
-/* GRID (usa patrón global) */
-.home-grid {
+.ost-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;
 }
 
-/* TARJETAS HOME (reutilizan estilo global tipo card) */
-.home-card {
+.ost-card {
   background: linear-gradient(180deg, #0d1030, #090b1a);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-  transition: 0.25s;
-  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
-.home-card:hover {
+.ost-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(123, 60, 255, 0.3);
+  box-shadow: 0 12px 35px rgba(80, 70, 200, 0.4);
 }
 
-/* IMAGEN */
-.home-card img {
+.ost-card img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: contain;
+  display: block;
   padding: 10px;
 }
 
-/* INFO */
-.home-card-info {
-  padding: 12px;
+.ost-info {
+  padding: 15px;
 }
 
-.home-card-info h3 {
-  color: #eaeaff;
+.ost-info h3 {
   font-size: 1rem;
+  margin-bottom: 5px;
 }
 
-.home-card-info span {
-  color: #9aa0ff;
+.ost-info span {
   font-size: 0.85rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .home-hero h1 {
-    font-size: 1.5rem;
-  }
-
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
+  color: #9aa0ff;
 }
