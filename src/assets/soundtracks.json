@@ -9,8 +9,8 @@
       "platform": "NES",
       "composer": "Koji Kondo",
       "duration": "2:58",
-      "audio": "audio/super_mario_bros.mp3",
-      "cover": "images/super_mario_cover.jpg",
+      "audio": "/assets/audio/super_mario_bros.mp3",
+      "cover": "/assets/images/super_mario_cover.png",
       "tags": ["platformer", "classic", "8-bit"]
     },
     {
@@ -22,8 +22,23 @@
       "composer": "Koji Kondo",
       "duration": "2:15",
       "audio": "audio/zelda_overworld.mp3",
-      "cover": "images/zelda_cover.jpg",
+      "cover": "/assets/images/zelda_cover.png",
       "tags": ["adventure", "classic", "8-bit"]
+    },
+    {
+      "title": "Chrono Trigger",
+      "artist": "Yasunori Mitsuda",
+      "image": "assets/img/chrono-trigger.jpg"
+    },
+    {
+      "title": "NieR Automata",
+      "artist": "Keiichi Okabe",
+      "image": "assets/img/nier.jpg"
+    },
+    {
+      "title": "Undertale",
+      "artist": "Toby Fox",
+      "image": "assets/img/undertale.jpg"
     }
   ]
 }
